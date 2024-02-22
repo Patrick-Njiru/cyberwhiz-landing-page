@@ -5,13 +5,17 @@ import logo from "../assets/logo.png"
 const Navbar = ({ dispatch, menuDisplay, openButton }) => {
 	return (
 		<div>
-			<nav className="flex mx-4 justify-between items-center mt-6 pb-3 sm:mx-8 md:mx-16 lg:mx-32">
+			<nav className="flex mx-5 justify-between items-center mt-6 pb-3 sm:mx-10 md:mx-20 lg:mx-40">
 				{/* logo */}
 				<a
 					href="#"
 					className="font-bold flex items-center z-10 md:font-extrabold"
 				>
-					<img src={logo} alt="" className="size-6 md:size-10 me-2 animate-spin" />
+					<img
+						src={logo}
+						alt="logo"
+						className="size-6 md:size-10 me-2 animate-spin"
+					/>
 					<span>Cyber</span>
 					<span className="text-orange-500">Whiz</span>
 				</a>
@@ -60,19 +64,28 @@ const Navbar = ({ dispatch, menuDisplay, openButton }) => {
 				<button
 					id="menu-btn"
 					className="absolute end-10 bg-transparent space-y-1 md:hidden z-10 hover:animate-pulse"
-					onClick={() => dispatch({type:'SHOW_OR_HIDE_MENU'})}
+					onClick={() => dispatch({ type: "SHOW_OR_HIDE_MENU" })}
 				>
 					<span
 						id="top-line"
-						className={openButton + "line h-1 w-8 rounded  block bg-orange-500"}
+						className={
+							openButton +
+							"line h-1 w-8 rounded  block bg-orange-500"
+						}
 					></span>
 					<span
 						id="middle-line"
-						className={openButton + "line h-1 w-8 rounded  block bg-orange-500"}
+						className={
+							openButton +
+							"line h-1 w-8 rounded  block bg-orange-500"
+						}
 					></span>
 					<span
 						id="bottom-line"
-						className={openButton + "line h-1 w-8 rounded  block bg-orange-500"}
+						className={
+							openButton +
+							"line h-1 w-8 rounded  block bg-orange-500"
+						}
 					></span>
 				</button>
 			</nav>

@@ -89,6 +89,23 @@ body {
 /* INTROSECTION */
 
 #intro {
+	background: rgb(34, 134, 207);
+	background: -o-radial-gradient(
+		circle,
+		rgba(34, 134, 207, 0.6446953781512605) 1%,
+		rgba(17, 32, 91, 0.6446953781512605) 65%,
+		rgba(17, 32, 91, 0.6446953781512605) 76%
+	);
+	background: radial-gradient(
+		circle,
+		rgba(34, 134, 207, 0.6446953781512605) 1%,
+		rgba(17, 32, 91, 0.6446953781512605) 65%,
+		rgba(17, 32, 91, 0.6446953781512605) 76%
+	);
+}
+
+/* SERVICES */
+.service {
 	background: rgb(18, 72, 111);
 	background: -o-radial-gradient(
 		circle,
@@ -100,4 +117,20 @@ body {
 		rgba(18, 72, 111, 0.6446953781512605) 0%,
 		rgba(38, 48, 88, 0.6446953781512605) 100%
 	);
+}
+
+@media (max-width: 768px) {
+	#intro {
+		background: rgb(18, 72, 111);
+		background: -o-radial-gradient(
+			circle,
+			rgba(18, 72, 111, 0.6446953781512605) 0%,
+			rgba(38, 48, 88, 0.6446953781512605) 100%
+		);
+		background: radial-gradient(
+			circle,
+			rgba(18, 72, 111, 0.6446953781512605) 0%,
+			rgba(38, 48, 88, 0.6446953781512605) 100%
+		);
+	}
 }

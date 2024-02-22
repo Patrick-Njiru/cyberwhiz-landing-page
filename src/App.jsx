@@ -1,5 +1,5 @@
 import { useReducer } from "react"
-import { IntroSection, Navbar } from "./scenes"
+import { IntroSection, Navbar, Services } from "./scenes"
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -36,6 +36,7 @@ const App = () => {
 				<div className="mx-auto">
 					<Navbar dispatch={dispatch} {...state} />
 					<IntroSection />
+					<Services />
 				</div>
 			)}
 		</>
