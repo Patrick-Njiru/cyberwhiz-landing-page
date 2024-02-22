@@ -1,8 +1,14 @@
-# React + Vite
+#Cyber Security Landing Page - Incomplete
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Desktop View
 
-Currently, two official plugins are available:
+<img src='./src/assets/screenshots/cs-dv-1.png'>
+<img src='./src/assets/screenshots/cs-dv-2.png'>
+<img src='./src/assets/screenshots/cs-dv-3.png'>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Mobile View
+<img src='./src/assets/screenshots/cs-mb-1.png'>
+<img src='./src/assets/screenshots/cs-mb-5.png'>
+<img src='./src/assets/screenshots/cs-mb-3.png'>
+<img src='./src/assets/screenshots/cs-mb-2.png'>
+<img src='./src/assets/screenshots/cs-mb-4.png'>
