@@ -4,24 +4,26 @@ import logo from "../assets/logo.png"
 
 const Navbar = ({ dispatch, menuDisplay, openButton }) => {
 	return (
-		<div>
-			<nav className="flex mx-5 justify-between items-center mt-6 pb-3 sm:mx-10 md:mx-20 lg:mx-40">
+		<header>
+			<nav className="flex fixed top-0 left-0 right-0 z-10 mx-5 justify-between items-center py-6 sm:mx-10 md:mx-20 lg:mx-40">
 				{/* logo */}
 				<a
 					href="#"
-					className="font-bold flex items-center z-10 md:font-extrabold"
+					className="flex items-center"
 				>
 					<img
 						src={logo}
 						alt="logo"
-						className="size-6 md:size-10 me-2 animate-spin"
+						className="size-6 md:size-10 me-2"
 					/>
-					<span>Cyber</span>
-					<span className="text-orange-500">Whiz</span>
+					<div className="text-lg font-bold md:font-extrabold md:text-xl">
+						<span>Cyber</span>
+						<span className="text-orange-500">Whiz</span>
+					</div>
 				</a>
 
 				{/* desktop menu */}
-				<div className="hidden items-center md:flex md:space-x-4 lg:space-x-8">
+				<div className="hidden items-center md:flex md:space-x-4 lg:space-x-6">
 					<a
 						href="#"
 						className="transition duraton-1000 delay-75 hover:text-orange-400"
@@ -95,7 +97,7 @@ const Navbar = ({ dispatch, menuDisplay, openButton }) => {
 				id="mobile-menu"
 				className={
 					menuDisplay +
-					"flex-col absolute top-0 size-full bg-black space-y-12 pt-32 items-center md:hidden"
+					"flex-col fixed top-0 size-full bg-black space-y-12 pt-32 items-center md:hidden"
 				}
 			>
 				<a
@@ -135,7 +137,7 @@ const Navbar = ({ dispatch, menuDisplay, openButton }) => {
 					Contact Us
 				</a>
 			</div>
-		</div>
+		</header>
 	)
 }
 

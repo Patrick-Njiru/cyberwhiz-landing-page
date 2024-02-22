@@ -1,4 +1,8 @@
+import { FaFingerprint, FaFolder, FaFolderPlus, FaLaptop } from "react-icons/fa"
+import { SiBrandfolder } from 'react-icons/si'
+import { BiFingerprint, BiLaptop, BiSolidFolder } from 'react-icons/bi'
 import img from "../assets/hero-img.jpg"
+
 const Services = () => {
 	return (
 		<section className="mx-5 mt-20 mb-20 text-center sm:mx-10 md:mt-36 md:mx-20 lg:mx-40">
@@ -8,10 +12,11 @@ const Services = () => {
 			<h1 className="text-2xl mb-10 font-extrabold sm:text-3xl md:text-5xl">
 				Cyber Security Solutions
 			</h1>
-			<div className="flex flex-col justify-center flex-wrap space-y-6 sm:items-center sm:flex-row sm:space-y-0 sm:space-x-4 md:space-x-4 md:flex-nowrap">
+			<div className="flex flex-col justify-center flex-wrap space-y-6 sm:items-center sm:flex-row sm:space-x-4 md:space-x-4 md:space-y-0 md:flex-nowrap">
 				{/* 1 */}
-				<div className="service p-6 mx-auto space-y-6 rounded-xl w-5/6 sm:w-2/5 md:w-2/6">
-					<img src={img} alt="computer" className="w-1/2 mx-auto" />
+				<div className="service self-baseline p-6 mx-auto space-y-6 rounded-xl w-5/6 sm:w-2/5 md:w-2/6">
+					{/* <img src={img} alt="computer" className="w-1/2 mx-auto" /> */}
+					<FaLaptop className="text-9xl mx-auto" />
 					<h3 className="font-bold text-xl">Computer Security</h3>
 					<p className="text-gray-400">
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -25,8 +30,9 @@ const Services = () => {
 					</a>
 				</div>
 				{/* 2 */}
-				<div className="service p-6 mx-auto space-y-6 rounded-xl w-5/6 sm:w-2/5 md:w-2/6">
-					<img src={img} alt="folders" className="w-1/2 mx-auto" />
+				<div className="service self-baseline p-6 mx-auto space-y-6 rounded-xl w-5/6 sm:w-2/5 md:w-2/6">
+					{/* <img src={img} alt="folders" className="w-1/2 mx-auto" /> */}
+					<FaFolder className="text-9xl mx-auto"/>
 					<h3 className="font-bold text-xl">Folder Security</h3>
 					<p className="text-gray-400">
 						Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -40,12 +46,13 @@ const Services = () => {
 					</a>
 				</div>
 				{/* 3 */}
-				<div className="service p-6 mx-auto space-y-6 rounded-xl w-5/6 sm:w-2/5 md:w-1/3">
-					<img
+				<div className="service self-baseline p-6 mx-auto space-y-6 rounded-xl w-5/6 sm:w-2/5 md:w-1/3">
+					{/* <img
 						src={img}
 						alt="fingerprint"
 						className="w-1/2 mx-auto"
-					/>
+					/> */}
+					<FaFingerprint className="text-9xl mx-auto"/>
 					<h3 className="font-bold text-xl">Fingerprint Security</h3>
 					<p className="text-gray-400">
 						Lorem ipsum dolor sit amet, consectetur adipisicing

@@ -1,5 +1,5 @@
 import { useReducer } from "react"
-import { IntroSection, Navbar, Services } from "./scenes"
+import { AboutUs, IntroSection, Navbar, Services } from "./scenes"
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -37,6 +37,7 @@ const App = () => {
 					<Navbar dispatch={dispatch} {...state} />
 					<IntroSection />
 					<Services />
+					<AboutUs />
 				</div>
 			)}
 		</>
