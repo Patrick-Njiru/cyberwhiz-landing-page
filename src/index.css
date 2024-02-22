@@ -85,3 +85,19 @@ body {
 	transform: rotate(-45deg) translate(11px);
 	background-color: red;
 }
+
+/* INTROSECTION */
+
+#intro {
+	background: rgb(18, 72, 111);
+	background: -o-radial-gradient(
+		circle,
+		rgba(18, 72, 111, 0.6446953781512605) 0%,
+		rgba(38, 48, 88, 0.6446953781512605) 100%
+	);
+	background: radial-gradient(
+		circle,
+		rgba(18, 72, 111, 0.6446953781512605) 0%,
+		rgba(38, 48, 88, 0.6446953781512605) 100%
+	);
+}

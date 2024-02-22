@@ -4,14 +4,14 @@ import logo from "../assets/logo.png"
 
 const Navbar = ({ dispatch, menuDisplay, openButton }) => {
 	return (
-		<div className="">
-			<nav className="flex mx-4 justify-between items-center mt-6 sm:mx-8 md:mx-16 lg:mx-32">
+		<div>
+			<nav className="flex mx-4 justify-between items-center mt-6 pb-3 sm:mx-8 md:mx-16 lg:mx-32">
 				{/* logo */}
 				<a
 					href="#"
 					className="font-bold flex items-center z-10 md:font-extrabold"
 				>
-					<img src={logo} alt="" className="size-6 md:size-12 me-2" />
+					<img src={logo} alt="" className="size-6 md:size-10 me-2 animate-spin" />
 					<span>Cyber</span>
 					<span className="text-orange-500">Whiz</span>
 				</a>

@@ -1,8 +1,8 @@
 import Navbar from "./Navbar";
-import HeroSection from "./HeroSection";
+import IntroSection from "./IntroSection";
 
 export {
   Navbar,
-  HeroSection,
+  IntroSection,
   
 }
