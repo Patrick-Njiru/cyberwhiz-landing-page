@@ -6,6 +6,7 @@
 
 * {
 	font-family: "roboto", sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
